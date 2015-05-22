@@ -1,0 +1,22 @@
+{
+  "name": "bower.json",
+  "version": "4.2.3",
+  "homepage": "https://github.com/Nan333/3.4-etsy-recreation",
+  "authors": [
+    "Nan Chen <nchen333@gmail.com>"
+  ],
+  "description": "bourbon",
+  "main": "3.4-etsy-recreation",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.3",
+    "neat": "~1.7.2"
+  }
+}
