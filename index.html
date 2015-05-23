@@ -2,11 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <link rel="stylesheet" href="main.scss">
+  <title>whiskey</title>
 </head>
 <body>
+<header>
+  <div class="inner-header">
+    <div class="etsy-logo-container">
+     <h1 class="etsy-logo">Etsy</h>
+    </div>
+    <div class="search-query">
+      <input class="search-bar"></input>
+      <button class="search-button">Search</button>
+      <button class="browse-button">Browse</button>
+      <div class="three-right-buttons">
+        <button class="register-button">Register</button>
+        <button class="sign-in-button">Sign-In</button>
+      </div>
+    </div>
+  </div>
+</header>
 
-<script src="bower_components/handlebars/handlebars.js"></script>
-<script src="main.js"></script>
+  <ul class="characters">
+  </ul>
+
+  <script id="character-template" type="text/x-handlebars-template">
+    <li>
+      <h1>{{name}}</h1>
+      <img src="{{thumbnail.path}}">
+    </li>
+  </script>
+  <script src="bower_components/handlebars/handlebars.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

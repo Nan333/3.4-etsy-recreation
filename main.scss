@@ -1,0 +1,88 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+$gutter: 0em;
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+* {
+  margin: 0;
+}
+
+header {
+  width: 1265px;
+  height: 66px;
+  box-sizing: border-box;
+
+}
+
+.inner-header {
+  width: 980px;
+  margin: 0 auto;
+  display: block;
+  align-top: middle;
+  box-sizing: border-box;
+}
+
+.search-query {
+  display: inline-block;
+  align-top: middle;
+  box-sizing: border-box;
+}
+
+.etsy-logo-container {
+  width: 70px;
+  display: inline-block;
+}
+
+.etsy-logo {
+  color: #F45800;
+  font-family: Arial, sans-serif;
+  font-weight: 200;
+}
+
+.search-button {
+  height: 34px;
+  width: 78.7px;
+  background-color: #5DA8D2;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  line-height: 17px;
+  font-family: Arial, Helvetica, Sans-serif;
+  padding: 7px 15px 8px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: inline-block;
+  left-margin: 0;
+}
+
+.browse-button {
+  height: 34px;
+  width: 78.7px;
+  border-radius: 5px;
+  line-height: 17px;
+  font-family: Arial, Helvetica, Sans-serif;
+  padding: 7px 15px 8px;
+  left-margin: 20px;
+  display: inline-block;
+}
+.search-bar {
+  width: 251px;
+  height: 28px;
+  display: inline-block;
+}
+
+.three-right-buttons {
+  float: right;
+  display: inline-block;
+}
+
+.register-button {
+  height: 34px;
+  width: 70.1px;
+  border-radius: 5px;
+  line-height: 17px;
+  font-family: Arial, Helvetica, Sans-serif;
+  padding: 7px 15px 8px;
+  left-margin: 20px;
+  border: 0;
+  background-color: white;
+  font-size: 16px;
+}
