@@ -4,6 +4,7 @@ $gutter: 0em;
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -15,10 +16,12 @@ header {
 
 .inner-header {
   width: 980px;
+  margin-top: 0;
   margin: 0 auto;
   display: block;
   align-top: middle;
   box-sizing: border-box;
+  vertical-align: middle;
 }
 
 .search-query {
@@ -36,6 +39,8 @@ header {
   color: #F45800;
   font-family: Arial, sans-serif;
   font-weight: 200;
+  line-height: 1.4;
+  vertical-align: middle;
 }
 
 .search-button {
@@ -51,6 +56,7 @@ header {
   border-bottom-right-radius: 5px;
   display: inline-block;
   left-margin: 0;
+  vertical-align: middle;
 }
 
 .browse-button {
@@ -113,5 +119,57 @@ header {
   margin: 0 auto;
   width: 980px;
   box-sizing: border-box;
-
+  padding-top: 0;
 }
+
+
+
+.Category {
+  @include span-columns(3);
+  height: 192px;
+  width: 185.6px;
+  @include omega(4n);
+  box-sizing: border-box;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+h2 {
+  height: 52px;
+  line-weight: 200;
+  padding-bottom: 18px;
+  padding-top: 36px;
+  box-sizing: border-box;
+}
+
+.main-body {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.side-navs {
+  width: 245px;
+  height: 1153px;
+  float: left;
+  position: relative;
+  border: 2px solid black;
+}
+
+.top-nav {
+  height: 408px;
+}
+
+.search-results {
+  width: 720px;
+  float: right;
+}
+
+.whiskey {
+  @include span-columns(3);
+  height: 219px;
+  width: 225.6px;
+  @include omega(4n);
+  box-sizing: border-box;
+  display: inline-block;
+  border: 2px solid black;
+  margin: 5px;
