@@ -5,34 +5,39 @@ $gutter: 0em;
 * {
   margin: 0;
   box-sizing: border-box;
+  background-color: #f5f5f1;
 }
 
 header {
   width: 1265px;
   height: 66px;
   box-sizing: border-box;
+  background-color: white;
 
 }
 
 .inner-header {
   width: 980px;
-  margin-top: 0;
   margin: 0 auto;
   display: block;
   align-top: middle;
   box-sizing: border-box;
   vertical-align: middle;
+  padding-top: 0;
 }
 
 .search-query {
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
+  margin-right: 0;
 }
 
 .etsy-logo-container {
   width: 70px;
   display: inline-block;
+  padding-left: -3px;
+  margin-left: 0;
 }
 
 .etsy-logo {
@@ -55,8 +60,8 @@ header {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   display: inline-block;
-  left-margin: 0;
   vertical-align: middle;
+  margin-right: 20px;
 }
 
 .browse-button {
@@ -66,10 +71,14 @@ header {
   line-height: 17px;
   font-family: Arial, Helvetica, Sans-serif;
   padding: 7px 15px 8px;
-  left-margin: 20px;
   display: inline-block;
   position: relative;
 }
+
+.shopping-cart {
+
+}
+
 .search-bar {
   width: 251px;
   height: 28px;
@@ -108,11 +117,13 @@ header {
   border: 2px solid #1692b3;
 }
 
+
 .category-bar {
   height: 321px;
   width: 100%;
   background-color: #ebebe6;
   box-sizing: border-box;
+
 }
 
 .whiskey-by-category {
@@ -122,8 +133,6 @@ header {
   padding-top: 0;
 }
 
-
-
 .Category {
   @include span-columns(3);
   height: 192px;
@@ -131,20 +140,22 @@ header {
   @include omega(4n);
   box-sizing: border-box;
   display: inline-block;
-  border: 2px solid black;
+  border: 1px solid #E1E3DF;
+  margin-right: 5px;
 }
 
 h2 {
   height: 52px;
   line-weight: 200;
-  padding-bottom: 18px;
-  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-top: 8px;
   box-sizing: border-box;
 }
 
 .main-body {
   width: 980px;
   margin: 0 auto;
+  color: #F5F5F1;
 }
 
 .side-navs {
@@ -152,11 +163,37 @@ h2 {
   height: 1153px;
   float: left;
   position: relative;
-  border: 2px solid black;
+  border: 1px solid #E1E3DF;
+  background-color: #f5f5f1;
 }
 
 .top-nav {
-  height: 408px;
+  height: 415px;
+  padding-left: 18px;
+  box-sizing: border-box;
+  border: 1px solid #E1E3DF;
+  font-family: Arial, sans-serif;
+  color: #1692B3;
+  font-size: 14px;
+  font-size: 75%;
+  padding-top: 10px;
+  line-height: 1;
+}
+
+.bottom-nav {
+  height: 655px;
+  width: 100%;
+  border: 1px solid #E1E3DF;
+  font-family: Arial, sans-serif;
+  color: #1692B3;
+}
+
+.all-categories {
+  padding-left: -7px;
+  margin-top: 5px;
+  font-color: #678CAD;
+  font-color: black;
+  font-weight: bold;
 }
 
 .search-results {
@@ -171,5 +208,35 @@ h2 {
   @include omega(4n);
   box-sizing: border-box;
   display: inline-block;
-  border: 2px solid black;
+  border: 1px solid #E1E3DF;
   margin: 5px;
+}
+
+
+a {
+  text-decoration: none;
+  color: #1692B3;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+<section class = "mainContent">
+ <div class = "product-grid">
+
+ </div>
+</section>
+
+ <script id="product-template" type="text/x-handlebars-template">
+   <div>
+
+     <img src ="{{Images.0.url_570xN}}">
+     <h2>{{{title}}}</h2>
+     <h4>{{currency_code}}</h4>
+     <h4>{{price}}<h4>
+
+   </div>
+ </script>
+
+ <script src="bower_components/handlebars/handlebars.js"></script>

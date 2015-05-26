@@ -19,3 +19,12 @@ function app(response) {
   var products = response.results;
   console.log(products);
 }
+
+function displayCharacterNames(characters) {
+  var source   = document.querySelector("#character-template").innerHTML;
+  var template = Handlebars.compile(source);
+  characters.forEach(function(character){
+    var output = template(character);
+    ulElement.insertAdjacentHTML('beforeend', output);
+  });
+}
